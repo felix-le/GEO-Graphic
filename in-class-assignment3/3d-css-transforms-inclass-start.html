@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>3D CSS Transforms</title>
+    <style>
+        /* Attempt to manipulate each of the below coloured paragraphs such that they match the dashed gray placeholders featured in the background image of the section. Be sure to use a browser that supports 3D transforms. Think in 3D. */
+        body {
+            font-family: sans-serif;
+        }
+        section {
+            border: 5px dashed grey;
+            width: 800px;
+            height: 500px;
+            padding: 50px;
+            background-image: url(end-result-transform3d.png);
+
+        }
+        p {
+            height: 100px;
+            width: 100px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            display: inline-block;
+            opacity: 0.7;
+            transition-property: all;
+            transition-duration: 1s;
+        }
+        section:hover p {
+
+        }
+        p:nth-of-type(1) {
+            background-color: red;
+
+        }
+        p:nth-of-type(2) {
+            background-color: blue;
+
+        }
+        p:nth-of-type(3) {
+            background-color: green;
+
+        }
+        p:nth-of-type(4) {
+            background-color: orange;
+
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <p>First</p>
+        <p>Second</p>
+        <p>Third</p>
+        <p>Fourth</p>
+    </section>
+</body>
+</html>

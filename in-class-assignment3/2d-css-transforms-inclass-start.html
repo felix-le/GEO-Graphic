@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>2D CSS Transforms</title>
+    <style>
+      /* Attempt to apply 2D tranforms to each of the paragraph elements below such that they match the suggested positions and configurations in the background image. Be sure to consider transform-origin (for some of them, anyways). */
+      body {
+        font-family: sans-serif;
+        background-image: url(end-result-transform2d.png);
+        background-repeat: no-repeat;
+      }
+      p {
+        height: 100px;
+        width: 100px;
+        color: white;
+        opacity: 0.7;
+        font-weight: bold;
+        text-align: center;
+      }
+      p#rotate {
+        background-color: red;
+        transform: rotate(98deg) translate(-8px, -115px);
+      }
+      p#scale {
+        background-color: blue;
+        transform: scaleX(5.5) scaleY(1.1) translate(40px, 10px);
+      }
+      p#skew {
+        background-color: orange;
+        transform: skew(-30deg) translate(10px, 10px) scale(1.05);
+      }
+      p#translate {
+        background-color: green;
+        transform: translate(427px, -100px);
+      }
+    </style>
+  </head>
+  <body>
+    <p id="rotate">Rotate me.</p>
+    <p id="scale">Scale me.</p>
+    <p id="skew">Skew me.</p>
+    <p id="translate">Translate me.</p>
+  </body>
+</html>
